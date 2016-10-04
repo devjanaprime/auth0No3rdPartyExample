@@ -1,8 +1,6 @@
-// var lock = new Auth0Lock( 'CLIENTID', 'DOMAIN');
+var lock = new Auth0Lock( 'CLIENTID', 'DOMAIN');
 // log out url, from Auth0
-// var logOutUrl = 'https://YOURAUTH0SUBDOMAIN.auth0.com/v2/logout';
-var lock = new Auth0Lock( 'k7cxIuaUm4Y59SDhjWD2SOJNra7yTjsw', 'devjanaprime.auth0.com' );
-var logOutUrl = 'https://devjanaprime.auth0.com/v2/logout';
+var logOutUrl = 'https://YOURAUTH0SUBDOMAIN.auth0.com/v2/logout';
 
 var myApp=angular.module( 'myApp', [] );
 
