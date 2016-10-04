@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Auth0 no 3rd party example 10-2016</title>
+    <!-- auth0 setup -->
+    <script src="https://cdn.auth0.com/js/lock-8.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="scripts/authExample.js" charset="utf-8"></script>
+  </head>
+  <body ng-app='myApp'>
+    <h1>Auth0 no 3rd party example 10-2016</h1>
+    <div ng-controller='authController'>
+      <div ng-show='showUser'>
+        <p>
+          Welcome back, {{ userProfile.name }}! <button ng-click='logOut()'>Log Out</button>
+        </p>
+        <img src="{{ userProfile.picture }}" />
+      </div>
+      <div ng-hide='showUser'>
+        Please <button ng-click='logIn()'>Log In</button>
+      </div>
+    </div>
+  </body>
+</html>
